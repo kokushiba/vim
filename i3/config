@@ -9,8 +9,8 @@ bindsym $mod+l exec i3-msg exit
 
 # border color
 # class border backgr. text indicator child_border
-client.focused          #002b36 #285577 #ffffff #ffffff #ffffff
-client.focused_inactive #333333 #001b2e #ffffff #484e50 #ffffff
+client.focused          #002b36 #285577 #071b24 #071b24 #071b24
+client.focused_inactive #333333 #001b2e #ffffff #484e50 #071b24
 client.unfocused        #333333 #222222 #888888 #292d2e #222222 
 client.urgent           #2f343a #900000 #ffffff #900000 #900000 
 client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c 
@@ -60,7 +60,7 @@ bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
-bindsym $mod+d exec --no-startup-id rofi -theme glue_pro_blue  -font "JetBrains Mono ExtraBold 12" -show drun
+bindsym $mod+d exec --no-startup-id rofi -theme DarkBlue  -font "JetBrains Mono ExtraBold 11" -show drun
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
@@ -108,7 +108,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+p floating toggle
+bindsym $mod+c floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+Shift+space focus mode_toggle
